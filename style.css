@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #0a192f;
+}
+
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo-container {
+  display: flex;
+  align-items: left;
+  flex-direction: column; /*maybe*/
+}
+
+.logo {
+  text-decoration: none;
+  color: #b6c1e0;
+  font-size: 36px;
+  margin-right: 20px; /*adjust*/
+  font-weight: bold;
+}
+
+.github {
+  font-size: 30px;
+  color: #b6c1e0;
+}
+
+.github:hover {
+  color: #58e1c4;
+}
+
+.linkedin {
+  font-size: 30px;
+  margin-left: 10px; /*adjust*/
+  color: #b6c1e0;
+}
+
+.linkedin:hover {
+  color: #58e1c4;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 16px;
+  color: #b6c1e0;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar a:hover {
+  color: #58e1c4;
+}
+
+.about {
+  margin-top: 20px;
+  padding-top: 280px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 150px;
+}
+
+.about h2 {
+  font-size: 62px;
+  margin-bottom: 10px;
+  color: #58e1c4;
+  font-family: "Fira Code", monospace;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.about h1 {
+  font-size: 62px;
+  margin-bottom: 10px;
+  color: #b6c1e0;
+}
+
+.about p {
+  font-size: 24px;
+  line-height: 1.6;
+  color: #8892b0;
+  width: 85%;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  padding-top: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 150px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.projects h2 {
+  font-size: 56px;
+  color: #58e1c4;
+  padding-bottom: 40px;
+  font-family: "Fira Code", monospace;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.project-card h3 {
+  font-size: 26px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  color: #b6c1e0;
+}
+
+.project-card p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #8892b0;
+  padding-bottom: 10px;
+  width: 950px;
+}
+
+.project-card .img1 {
+  width: 950px;
+  height: 470px;
+  border-radius: 10px;
+}
+
+.project-card {
+  padding-bottom: 175px;
+}
+
+.btn {
+  margin-top: 10px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.git-btn,
+.demo-btn {
+  font-size: 20px;
+  color: #58e1c4;
+  background: #0a192f;
+  border: solid #58e1c4 3px;
+  border-radius: 5px;
+  line-height: 70px;
+  width: 300px;
+  text-decoration: none;
+  font-family: "Fira Code", monospace;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.git-btn:hover,
+.demo-btn:hover {
+  background: #58e1c4;
+  color: #0a192f;
+}
+
+.bim-example {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+  border: solid #0a192f 1px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background: #1c4551;
+}
+
+.bim-example p {
+  color: #7cc4b8;
+  font-family: "Fira Code", monospace;
+  font-style: normal;
+  font-weight: 300;
+  width: 270px;
+}
+
+.loading {
+  display: inline-block;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border: solid 6px;
+  border-color: #7cc4b8 transparent #7cc4b8 transparent;
+  border-radius: 50%;
+  animation: spin 1.4s linear infinite;
+  bottom: 10px;
+  right: 10px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.edu-skills {
+  display: flex;
+  gap: 1rem;
+  padding-top: 150px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 150px;
+}
+
+.edu-cont {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: solid #58e1c4 1px;
+  border-radius: 15px;
+  height: 600px;
+  background: #0a1924;
+}
+
+.edu-cont h2 {
+  font-size: 56px;
+  color: #58e1c4;
+  margin: 0;
+  padding-bottom: 20px;
+  font-family: "Fira Code", monospace;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.edu-cont img {
+  width: 400px;
+  border-radius: 15px;
+}
+
+.edu-cont h3 {
+  font-size: 22px;
+  color: #b6c1e0;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.edu-cont h4 {
+  font-size: 20px;
+  color: #8892b0;
+}
+
+.edu-cont h4 span {
+  color: #b6c1e0;
+}
+
+.edu-cont ul {
+  list-style-type: disc;
+  padding: 20px;
+  color: #58e1c4;
+  font-size: 18px;
+}
+
+.edu-cont ul li span {
+  color: #8892b0;
+}
+
+.skills-cont {
+  width: 50%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border: solid #58e1c4 1px;
+  border-radius: 15px;
+  background: #0a1924;
+}
+
+.skills-cont h2 {
+  font-size: 56px;
+  color: #58e1c4;
+  margin: 0 0 30px;
+  font-family: "Fira Code", monospace;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.skill-icons {
+  width: 380px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.skill-icons img {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+}
+
+.border {
+  border: solid #58e1c4 1px;
+  border-radius: 10px;
+}
+
+.border:hover {
+  border-color: #0a192f;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  /* width: 40%; */
+  align-self: center;
+  /* margin: 0 auto; */
+  padding-top: 150px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 150px;
+}
+
+.contact h2 {
+  font-size: 56px;
+  color: #58e1c4;
+  font-family: "Fira Code", monospace;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.contact p {
+  font-size: 24px;
+  color: #8892b0;
+  width: 60%;
+  padding: 20px;
+}
+
+.footer {
+  padding-top: 150px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.one-liner {
+  color: #8892b0;
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+.copyright {
+  font-size: 16px;
+  color: #8892b0;
+  padding-top: 20px;
+  font-family: "Fira Code", monospace;
+  font-style: normal;
+  font-weight: 300;
+}

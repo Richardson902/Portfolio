@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nick Richardson's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <a href="index.html" class="logo">Nick Richardson</a>
+        <div class="social-icons">
+          <a
+            href="https://github.com/Richardson902"
+            target="_blank"
+            class="github"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/nickrichardson902"
+            target="_blank"
+            class="linkedin"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a href="media/Nick_Richardson_Resume.pdf" target="_blank">Resume</a>
+      </nav>
+    </header>
+    <section id="about" class="about">
+      <h2>Hello! 👋</h2>
+      <h1>My name is Nick Richardson.</h1>
+      <p>
+        I'm a developer with a passion for coding and technology, currently
+        pursuing a degree in IT Programming at NSCC. When I'm not buried in
+        lines of code, I'm often outside geocaching, metal detecting, or gaming.
+        These hobbies have been beneficial to sharpening my problem-solving
+        skills and nurturing my creativity, perfectly complementing my passion
+        for coding and technology. With a commitment to mastering the craft and
+        a keen attention to detail, I am excited to apply my skills to
+        real-world challenges and contribute meaningfully to the tech industry.
+      </p>
+    </section>
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>Bookstore Storefront</h3>
+        <p>
+          Designing a storefront for a bookstore using HTML and CSS. This
+          project explored learning design and layout techniques such as media
+          queries to ensure responsiveness across all platforms.
+        </p>
+        <img
+          id="bookstore-img"
+          class="img1"
+          src="/media/bookstoresitedark.png"
+          alt="Bookstore example"
+        />
+        <div class="btn">
+          <a
+            href="https://github.com/Richardson902/Bookstore-Storefront"
+            target="_blank"
+            class="git-btn"
+            >GitHub</a
+          >
+          <a
+            href="https://richardson902.github.io/Bookstore-Storefront/"
+            target="_blank"
+            class="demo-btn"
+            >Live Demo</a
+          >
+        </div>
+      </div>
+      <div class="project-card">
+        <h3>Bookstore Inventory Manager</h3>
+        <p>
+          Developing a Java program aimed at efficient management of a bookstore
+          inventory. Using OOP principles, the program allows adding, selling,
+          updating stock, and removing books, with functionalities for
+          displaying the inventory and generating sales reports. Employing basic
+          input/output and exception handling, it provides a user-friendly
+          command-line interface.
+        </p>
+        <div class="bim-example">
+          <p>-----Main Menu-----</p>
+          <p>1. Display Inventory</p>
+          <p>2. Generate Sales Report</p>
+          <p>3. Add Book</p>
+          <p>4. Sell Book</p>
+          <p>5. Update Stock</p>
+          <p>6. Remove Book</p>
+          <p>7. Exit</p>
+          <div class="loading"></div>
+        </div>
+        <div class="btn">
+          <a
+            href="https://github.com/Richardson902/Bookstore-Inventory-Manager"
+            target="_blank"
+            class="git-btn"
+            >GitHub</a
+          >
+        </div>
+      </div>
+      <div class="project-card">
+        <h3>RESTful API</h3>
+        <p>
+          Developing a Node.js application for managing a movie database using
+          Express framework. This application provides RESTful APIs for basic
+          CRUD operations on movie data. The application includes routes for
+          retrieving all movies, adding a new movie, updating an existing movie,
+          deleting a movie, and fetching a single movie by ID.
+        </p>
+        <img class="img3" src="media/RestAPIpng.png" alt="REST API icon" />
+        <div class="btn">
+          <a
+            href="https://github.com/Richardson902/RESTful-API"
+            target="_blank"
+            class="git-btn"
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </section>
+    <section id="education" class="edu-skills">
+      <div class="edu-cont">
+        <h2>Education</h2>
+        <a href="https://www.nscc.ca/default.aspx" target="_blank"
+          ><img id="nscc-logo" src="media/nscc.png" alt="NSCC Logo"
+        /></a>
+        <h3>Nova Scotia Community College</h3>
+        <h4><span>IT Programming</span> | 2023 - Present</h4>
+        <ul>
+          <li><span>Systems Analysis and Design</span></li>
+          <li><span>Object Oriented Programming</span></li>
+          <li><span>Logic and Programming</span></li>
+          <li><span>Client-Side Programming</span></li>
+          <li><span>Web Development</span></li>
+          <li><span>Networking and Security</span></li>
+          <li><span>Windows Administration</span></li>
+        </ul>
+      </div>
+      <div class="skills-cont">
+        <h2>Skills</h2>
+        <div class="skill-icons">
+          <img id="java-icon" src="media/java.png" alt="Java Icon" />
+          <img id="c-icon" src="media/c.png" alt="C Icon" />
+          <img id="js-icon" class="border" src="media/js.png" alt="JS Icon" />
+          <img id="html-icon" src="media/html.png" alt="HTML Icon" />
+          <img id="css-icon" src="media/css3.png" alt="CSS Icon" />
+          <img id="sql-icon" src="media/sql.png" alt="SQL Icon" />
+          <img id="git-icon" src="media/Git.png" alt="Git Icon" />
+          <img id="github-icon" src="media/GitHub.png" alt="GitHub Icon" />
+          <img
+            id="vsc-icon"
+            class="border"
+            src="media/vsc.png"
+            alt="VSC Icon"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>
+        I am currently looking for new opportunities and my inbox is always
+        open. Whether you have a question or would just like to say hi, I'll try
+        my best to get back to you as soon as possible!
+      </p>
+      <a
+        href="mailto:nickrichardson902@gmail.com?subject=Ctrl%20%2B%20Alt%20%2B%20Hello%3A%20Let%27s%20Chat%21"
+        class="git-btn"
+        >Say Hello</a
+      >
+    </section>
+    <footer class="footer">
+      <p class="one-liner">Debugging the world, one line at a time.</p>
+      <div class="social-icons">
+        <a
+          href="https://github.com/Richardson902"
+          target="_blank"
+          class="github"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/nickrichardson902/"
+          target="_blank"
+          class="linkedin"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+      <p class="copyright">Designed & built by Nick Richardson</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
