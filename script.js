@@ -1,3 +1,22 @@
+window.onload = function () {
+  const menu_btn = document.querySelector(".hamburger");
+  const mobile_menu = document.querySelector(".mobile-nav");
+
+  menu_btn.addEventListener("click", function () {
+    menu_btn.classList.toggle("is-active");
+    mobile_menu.classList.toggle("is-active");
+  });
+
+  // Close mobile menu when clicking on a menu item
+  const mobile_menu_items = document.querySelectorAll(".mobile-nav a");
+  mobile_menu_items.forEach(function (item) {
+    item.addEventListener("click", function () {
+      mobile_menu.classList.remove("is-active");
+      menu_btn.classList.remove("is-active");
+    });
+  });
+};
+
 //Animated project card
 let originalColors = {
   backgroundColor: "#1c4551",
@@ -187,10 +206,20 @@ document
   .querySelectorAll(".navbar a:not([href='media/Nick_Richardson_Resume.pdf'])")
   .forEach((anchor) => {
     anchor.addEventListener("click", function (event) {
-      event.preventDefault(); // Prevent default link behavior
+      event.preventDefault(); // Prevent default behavior
       const href = this.getAttribute("href");
-      // Extract the section ID from the href attribute
+      // Extract the section id from the href attribute
       const sectionId = href.startsWith("#") ? href : `#${href}`;
       scrollToSection(sectionId);
     });
   });
+
+const toTop = document.querySelector(".to-top");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    toTop.classList.add("active");
+  } else {
+    toTop.classList.remove("active");
+  }
+});

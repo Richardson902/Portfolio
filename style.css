@@ -2,7 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   font-family: Helvetica, Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -24,14 +29,14 @@ body {
 .logo-container {
   display: flex;
   align-items: left;
-  flex-direction: column; /*maybe*/
+  flex-direction: column;
 }
 
 .logo {
   text-decoration: none;
   color: #b6c1e0;
   font-size: 36px;
-  margin-right: 20px; /*adjust*/
+  margin-right: 20px;
   font-weight: bold;
 }
 
@@ -46,7 +51,7 @@ body {
 
 .linkedin {
   font-size: 30px;
-  margin-left: 10px; /*adjust*/
+  margin-left: 10px;
   color: #b6c1e0;
 }
 
@@ -235,7 +240,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   border: solid #58e1c4 1px;
   border-radius: 15px;
   height: 600px;
@@ -245,11 +249,12 @@ body {
 .edu-cont h2 {
   font-size: 56px;
   color: #58e1c4;
-  margin: 0;
+  margin: 0 0 30px;
   padding-bottom: 20px;
   font-family: "Fira Code", monospace;
   font-style: normal;
   font-weight: 300;
+  padding-top: 20px;
 }
 
 .edu-cont img {
@@ -290,7 +295,6 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
   border: solid #58e1c4 1px;
   border-radius: 15px;
   background: #0a1924;
@@ -303,6 +307,8 @@ body {
   font-family: "Fira Code", monospace;
   font-style: normal;
   font-weight: 300;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .skill-icons {
@@ -334,9 +340,7 @@ body {
   justify-content: center;
   text-align: center;
   align-items: center;
-  /* width: 40%; */
   align-self: center;
-  /* margin: 0 auto; */
   padding-top: 150px;
   padding-left: 200px;
   padding-right: 200px;
@@ -381,4 +385,343 @@ body {
   font-family: "Fira Code", monospace;
   font-style: normal;
   font-weight: 300;
+}
+
+.hamburger {
+  position: relative;
+  display: block;
+  width: 35px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  z-index: 100;
+}
+
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #b6c1e0;
+  margin: 6px 0px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+  -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+  -webkit-transform: rotate(45deg) translate(-9px, -8px);
+  transform: rotate(45deg) translate(-9px, -8px);
+  position: relative;
+}
+
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 98;
+  background-color: #0a192f;
+  padding-top: 120px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+  left: 0;
+}
+
+.mobile-nav a {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 16px;
+  text-align: center;
+  padding: 12px 16px;
+  background-color: #0a192f;
+  color: #b6c1e0;
+  text-decoration: none;
+  font-size: 48px;
+}
+
+.mobile-nav a:hover {
+  color: #58e1c4;
+}
+
+.to-top {
+  background: #0a192f;
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #b6c1e0;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+  border: solid #b6c1e0 2px;
+}
+
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+@media (min-width: 1200px) {
+  .mobile-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .project-card {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .projects h2 {
+    font-size: 44px;
+  }
+
+  .edu-cont img {
+    width: 80%;
+    transform: scale(0.8);
+    transform-origin: center;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .contact h2 {
+    font-size: 44px;
+  }
+
+  .project-card .img1,
+  .project-card .img3 {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .project-card p {
+    max-width: 100%;
+    width: auto;
+  }
+
+  .about h2,
+  .about h1 {
+    font-size: 44px;
+  }
+
+  .about p {
+    font-size: 20px;
+  }
+
+  .about {
+    margin-top: 100px;
+    padding-top: 200px;
+    padding-left: 200px;
+    padding-right: 100px;
+  }
+
+  .edu-skills .edu-cont,
+  .edu-skills .skills-cont {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .edu-skills {
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .contact {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .projects {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .edu-cont h2 {
+    font-size: 44px;
+  }
+
+  .skills-cont h2 {
+    font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .about {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .about p {
+    width: 100%;
+  }
+
+  .footer {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .projects {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .header {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .contact {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .contact p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skill-icons {
+    gap: 0rem;
+    width: calc(80px * 4 + 3 * 0.5rem);
+  }
+
+  .skill-icons img {
+    margin: 5px;
+  }
+
+  .edu-cont h3,
+  .edu-cont h4 {
+    text-align: center;
+  }
+
+  .edu-cont ul {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .edu-skills {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .footer .one-liner {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .footer .copyright {
+    font-size: 12px;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  .github {
+    font-size: 24px;
+  }
+
+  .linkedin {
+    font-size: 24px;
+  }
+
+  .about {
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .projects {
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 0px;
+  }
+
+  .edu-skills {
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+  }
+
+  .contact {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .about h2,
+  .about h1 {
+    font-size: 36px;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
+
+  .skill-icons img {
+    height: 90px;
+    width: 90px;
+  }
+
+  .skills-cont {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 392px) {
+  .skill-icons img {
+    height: 80px;
+    width: 80px;
+  }
 }
