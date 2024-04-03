@@ -60,13 +60,13 @@ setInterval(changeColors, 700);
 // const bookstoreImg = document.getElementById("bookstore-img");
 // const bookstoreImgSrc = bookstoreImg.src;
 
-bookstoreImg.addEventListener("mouseover", function () {
-  this.src = "media/BookstoreSite.png";
-});
+// bookstoreImg.addEventListener("mouseover", function () {
+//   this.src = "media/BookstoreSite.png";
+// });
 
-bookstoreImg.addEventListener("mouseout", function () {
-  this.src = bookstoreImgSrc;
-});
+// bookstoreImg.addEventListener("mouseout", function () {
+//   this.src = bookstoreImgSrc;
+// });
 
 //Change education logo on hover
 const nsccLogo = document.getElementById("nscc-logo");
