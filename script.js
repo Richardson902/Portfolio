@@ -57,8 +57,8 @@ function changeColors() {
 setInterval(changeColors, 700);
 
 //change bookstore img on hover
-const bookstoreImg = document.getElementById("bookstore-img");
-const bookstoreImgSrc = bookstoreImg.src;
+// const bookstoreImg = document.getElementById("bookstore-img");
+// const bookstoreImgSrc = bookstoreImg.src;
 
 bookstoreImg.addEventListener("mouseover", function () {
   this.src = "media/BookstoreSite.png";

@@ -154,6 +154,12 @@ body {
   border-radius: 10px;
 }
 
+.project-card .img2 {
+  width: 690px;
+  height: 485px;
+  border-radius: 10px;
+}
+
 .project-card {
   padding-bottom: 175px;
 }
@@ -530,7 +536,8 @@ body {
   }
 
   .project-card .img1,
-  .project-card .img3 {
+  .project-card .img3,
+  .project-card .img2 {
     max-width: 100%;
     height: auto;
     display: block;
