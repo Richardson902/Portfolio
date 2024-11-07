@@ -160,6 +160,12 @@ body {
   border-radius: 10px;
 }
 
+.project-card .vertical-gif {
+  width: 300px;
+  height: 600px;
+  border-radius: 10px;
+}
+
 .project-card {
   padding-bottom: 175px;
 }
@@ -544,6 +550,15 @@ body {
     margin: 0 auto;
   }
 
+  .project-card .vertical-gif {
+    width: 200px;
+    height: 400px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
   .project-card p {
     max-width: 100%;
     width: auto;
@@ -732,3 +747,6 @@ body {
     width: 80px;
   }
 }
+
+/* TODO: Fix formatting for obscure screen sizes regarding the anchor points. Can achieve this by replacing the padding space
+with a margin space depending on screen screen size with @media breakpoints. */
