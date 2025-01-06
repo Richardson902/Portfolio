@@ -160,6 +160,11 @@ body {
   border-radius: 10px;
 }
 
+.project-card .img3 {
+  width: 690px;
+  border-radius: 10px;
+}
+
 .project-card .vertical-gif {
   width: 300px;
   height: 600px;
