@@ -45,16 +45,16 @@ javaIcon.addEventListener("mouseout", function () {
   this.src = javaIconSrc;
 });
 
-//c icon
-const cIcon = document.getElementById("c-icon");
-const cIconSrc = cIcon.src;
+//react icon
+const reactIcon = document.getElementById("react-icon");
+const reactIconSrc = reactIcon.src;
 
-cIcon.addEventListener("mouseover", function () {
-  this.src = "media/ccolor.png";
+reactIcon.addEventListener("mouseover", function () {
+  this.src = "media/react-color.png";
 });
 
-cIcon.addEventListener("mouseout", function () {
-  this.src = cIconSrc;
+reactIcon.addEventListener("mouseout", function () {
+  this.src = reactIconSrc;
 });
 
 //js icon
@@ -117,28 +117,28 @@ gitIcon.addEventListener("mouseout", function () {
   this.src = gitIconSrc;
 });
 
-//gihub icon
-const githubIcon = document.getElementById("github-icon");
-const githubIconSrc = githubIcon.src;
+//spring icon
+const springIcon = document.getElementById("spring-icon");
+const springIconSrc = springIcon.src;
 
-githubIcon.addEventListener("mouseover", function () {
-  this.src = "media/githubcolor.png";
+springIcon.addEventListener("mouseover", function () {
+  this.src = "media/spring-color.png";
 });
 
-githubIcon.addEventListener("mouseout", function () {
-  this.src = githubIconSrc;
+springIcon.addEventListener("mouseout", function () {
+  this.src = springIconSrc;
 });
 
 //vsc logo
-const vscIcon = document.getElementById("vsc-icon");
-const vscIconSrc = vscIcon.src;
+const dockerIcon = document.getElementById("docker-icon");
+const dockerIconSrc = dockerIcon.src;
 
-vscIcon.addEventListener("mouseover", function () {
-  this.src = "media/vsccolor.png";
+dockerIcon.addEventListener("mouseover", function () {
+  this.src = "media/docker-color.png";
 });
 
-vscIcon.addEventListener("mouseout", function () {
-  this.src = vscIconSrc;
+dockerIcon.addEventListener("mouseout", function () {
+  this.src = dockerIconSrc;
 });
 
 // Scroll to anchor links
